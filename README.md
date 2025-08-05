@@ -54,3 +54,12 @@ pip install notebook duckdb jupyterlab-language-pack-zh-cn
 pip install pandas sympy pydes pyaes pycryptodomex pillow pyshark dpkt brotlipy certifi cffi chardet cryptography idna pip pycosat pycparser openpyxl urllib3 requests ipywidgets ipykernel pyOpenSSL PySocks gevent
 
 pip install SQLAlchemy pymysql networkx tqdm rich
+
+## step 5 wireshark
+
+sudo apt install wireshark -y
+
+-  Should non-superusers be able to capture packets?
+-  Choose Yes , (Allow normal users capture network packets)
+
+sudo usermod -a -G wireshark $USER
