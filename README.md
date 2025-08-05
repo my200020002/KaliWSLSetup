@@ -57,9 +57,23 @@ pip install SQLAlchemy pymysql networkx tqdm rich
 
 ## step 5 wireshark
 
-sudo apt install wireshark -y
+sudo apt install wireshark tshark -y
 
 -  Should non-superusers be able to capture packets?
 -  Choose Yes , (Allow normal users capture network packets)
 
 sudo usermod -a -G wireshark $USER
+
+## step 6 font
+
+sudo apt install fonts-wqy-zenhei fonts-wqy-microhei lxappearance
+
+#sudo apt-get install ttf-mscorefonts-installer
+
+sudo cp LXGWWenKaiMonoGBScreen.ttf /usr/local/share/fonts/
+
+fc-cache -fv
+
+fc-list | grep LXGW
+
+sudo lxappearance # default Sans Regular
